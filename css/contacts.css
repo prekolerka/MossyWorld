@@ -17,7 +17,7 @@ body{
 }
 h1 {
     font-family: var(--main-font);
-    font-size: 60px;
+    font-size: 90px;
     text-shadow: 1px 1px 30px rgb(243, 255, 218);
     
     
@@ -39,7 +39,7 @@ a{
     background-repeat: no-repeat;
     border-radius: 17px ;
     padding-bottom: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     
 }
 .header {
@@ -75,7 +75,7 @@ a{
     height: 2px;
     background-color: #eedaaf;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 200px;
 }
 .desc{
     max-width: 700px;
@@ -89,96 +89,83 @@ a{
     font-family: "Spectral", serif;
   font-weight: 300;
   font-style: normal;
-  font-size:20px;
+  font-size:24px;
   text-shadow: 2px 3px 10px black;
 }
-.catalog{
+.res-btn{
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background-color: rgba(49, 64, 27, 0.7);
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #000000;
+}
+.res-btn:hover{
+    box-shadow: 0px 0px 20px #eedaaf;
+}
+
+.btns{
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-background-color: rgba(49, 64, 27, 0.5);
+    
+}
+.btns ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: rgba(49, 64, 27, 0.5);
     border-radius:17px 17px 0 0  ;
     padding: 20px;
-    gap: 30px;
 
-    background-image: url("../assets/bg.png");
+    font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
 }
-
-.card{
-    background-color: #080a04c6;
-    padding: 20px;
-    border-radius: 10px;
-    
-
-}
-.card:hover{
-    transform: translateY(-3px);
-    box-shadow: 0px 3px 15px black;
-}
-.card img{
-    width: 100%;
-    height: auto;
+/* .btns-img{
+    width: 50px;
     border-radius: 17px;
-    border: #eedaaf 2px solid;
-    
-}
-h4{
-    color: #eedaaf;
-    font-size: 24px;
-    margin: 10px 0;
-}
-p{
-    color: #eedaaf;
-    font-size: 16px;
-}
-.card_name a{
-   background-color: #eedaaf;
-    color: #080a04;
-    padding: 5px 10px;
-    border-radius: 8px;
-    
-}
-span{
-    font-size: 16px;
-   background-color: #080a04;
-   color: #eedaaf;
-   padding: 5px;
-   max-width: 100px;
-   font-size: 26px;
-   border-radius: 8px;
-
-}
+} */
 @media (max-width: 1024px) {
   .main,
-  .catalog {
+  .btns {
     max-width: 95%;
-  }
-
-  .nav ul {
-    gap: 70px;
-    font-size: 20px;
   }
 
   .line {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
   }
 
-  .desc {
-    max-width: 85%;
-    padding-bottom: 70px;
-  }
-
-  .catalog {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+  .nav ul {
+    gap: 60px;
+    font-size: 20px;
   }
 
   h1 {
-    font-size: 52px;
+    font-size: 72px;
+  }
+
+  .desc {
+    max-width: 90%;
+    padding-bottom: 80px;
+  }
+
+  .desc p {
+    font-size: 26px;
+  }
+
+  .btns-img {
+    width: 100%;
+    display: block;
   }
 }
 
@@ -186,9 +173,9 @@ span{
   .main {
     max-width: calc(100% - 20px);
     border-radius: 14px;
-    margin-bottom: 20px;
-    background-size: cover;
+    margin-bottom: 60px;
     background-position: center;
+    background-size: cover;
   }
 
   .header {
@@ -207,66 +194,66 @@ span{
   }
 
   .logoimg {
-    width: 72px;
+    width: 70px;
   }
 
   .line {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+  }
+
+  h1 {
+    font-size: 52px;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 24px;
   }
 
   .desc {
     max-width: 90%;
-    padding: 0 10px 60px;
+    padding: 0 10px 70px;
   }
 
   .desc p {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.5;
   }
 
-  h1 {
-    font-size: 42px;
-    text-align: center;
-    line-height: 1.15;
+  .res-btn {
+    max-width: 190px;
+    font-size: 24px;
+    margin-bottom: 70px;
+    padding: 12px;
   }
 
-  .catalog {
-    max-width: calc(100% - 20px);
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
+  .btns ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
     padding: 16px;
-    border-radius: 14px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .card {
-    padding: 14px;
-  }
-
-  .card img {
+    font-size: 20px;
     border-radius: 14px;
   }
 
-  h4 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 15px;
-    line-height: 1.45;
+  .btns-img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
   .main,
-  .catalog {
+  .btns {
     max-width: calc(100% - 12px);
   }
 
   .main {
     border-radius: 12px;
+    margin-bottom: 40px;
   }
 
   .header {
@@ -283,56 +270,44 @@ span{
   }
 
   .logoimg {
-    width: 56px;
+    width: 54px;
   }
 
   h1 {
-    font-size: 34px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    text-shadow: 1px 1px 18px rgb(243, 255, 218);
+  }
+
+  .line {
+    margin-bottom: 50px;
   }
 
   .desc {
     max-width: 94%;
-    padding: 0 8px 45px;
+    padding: 0 8px 50px;
   }
 
   .desc p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.55;
   }
 
-  .line {
-    margin-bottom: 30px;
-  }
-
-  .catalog {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    padding: 10px;
-    border-radius: 12px;
-  }
-
-  .card {
-    padding: 12px;
-    border-radius: 12px;
-  }
-
-  .card img {
-    border-radius: 12px;
-  }
-
-  h4 {
+  .res-btn {
+    max-width: 170px;
     font-size: 20px;
-    margin: 12px 0 8px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
   }
 
-  p {
-    font-size: 14px;
+  .btns ul {
+    padding: 10px;
+    gap: 12px;
+    font-size: 18px;
+    border-radius: 12px;
   }
 
-  .card_name a {
-    display: inline-block;
-    padding: 6px 12px;
-    font-size: 14px;
+  .btns-img {
+    border-radius: 12px;
   }
 }
